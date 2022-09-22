@@ -8,11 +8,10 @@ const FetchToDo = () => {
             const res = await fetch('https://jsonplaceholder.typicode.com/todos');
             const data = await res.json();
             setTodo(data);
-            console.log(data);
         }
         fetchData();
     },[])
-    console.log(todos);
+
     return (
         <div>
             <div className="grid md:grid-cols-3">
